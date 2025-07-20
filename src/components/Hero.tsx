@@ -13,14 +13,14 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-              Your Name Here
+              Hemanth Kumar V
             </h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8 font-medium">
-              Software Engineer & Technology Enthusiast
+              Full Stack DotNet Developer
             </h2>
             <p className="text-lg md:text-xl text-foreground/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Replace this with your personal introduction. Describe your passion for technology, 
-              your expertise areas, and what drives you as a software engineer. Make it engaging and personal.
+              I am a passionate Full Stack DotNet Developer with expertise in building robust web applications.
+              My journey in technology has been driven by a love for problem-solving and a desire to create impactful solutions.
             </p>
           </div>
           
@@ -39,21 +39,22 @@ const Hero = () => {
             <a 
               href="#" 
               className="p-3 rounded-full bg-card hover:bg-accent transition-all duration-300 hover:scale-110 shadow-elegant"
-              aria-label="GitHub Profile"
+              aria-label="GitHub Prohttps://github.com/Vadakattuhemanth1699file"
             >
               <Github className="h-6 w-6" />
             </a>
             <a 
               href="#" 
               className="p-3 rounded-full bg-card hover:bg-accent transition-all duration-300 hover:scale-110 shadow-elegant"
-              aria-label="LinkedIn Profile"
+              aria-label="https://www.linkedin.com/in/hemanth-kumar-89821a31a/"
             >
               <Linkedin className="h-6 w-6" />
             </a>
             <a 
               href="#" 
               className="p-3 rounded-full bg-card hover:bg-accent transition-all duration-300 hover:scale-110 shadow-elegant"
-              aria-label="Email Contact"
+              aria-label="hemanth.kumar8357@gmail.com
+"
             >
               <Mail className="h-6 w-6" />
             </a>

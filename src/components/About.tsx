@@ -13,9 +13,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-foreground/80 leading-relaxed">
-                <strong>Replace this section with your personal story.</strong> Describe your journey into 
-                software engineering, your background, and what motivates you. This is where you can 
-                share your unique perspective and experiences.
+                <strong>I'm a Full Stack .NET Developer with over 5 years of experience transforming complex business requirements into scalable, enterprise-grade solutions. I've led the modernization of legacy systems serving 50,000+ users, achieving 99.9% uptime while working in fast-paced Agile environments. My expertise spans the complete Microsoft ecosystem—from C# and .NET Core to Angular and React frontends—and I'm passionate about architecting clean, maintainable code that follows SOLID principles. Whether it's building RESTful APIs, implementing CI/CD pipelines, or deploying cloud-native applications on Azure and AWS, I deliver solutions that drive real business value and exceed performance expectations.</strong>
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed">
                 Talk about your technical interests, any specializations you have, and your approach 
@@ -33,23 +31,23 @@ const About = () => {
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-2 border-b border-border">
                   <span className="text-muted-foreground">Location</span>
-                  <span className="font-medium">Your City, Country</span>
+                  <span className="font-medium">Plano, Texas</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-border">
                   <span className="text-muted-foreground">Experience</span>
-                  <span className="font-medium">X+ Years</span>
+                  <span className="font-medium">5+ Years</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-border">
                   <span className="text-muted-foreground">Education</span>
-                  <span className="font-medium">Your Degree</span>
+                  <span className="font-medium">Master's in Information Systems and Technology</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-border">
                   <span className="text-muted-foreground">Interests</span>
-                  <span className="font-medium">Your Interests</span>
+                  <span className="font-medium">I was always eager to learn and adapt new technologies.</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
                   <span className="text-muted-foreground">Languages</span>
-                  <span className="font-medium">Your Languages</span>
+                  <span className="font-medium">English, Telugu, Hindi</span>
                 </div>
               </div>
             </div>
