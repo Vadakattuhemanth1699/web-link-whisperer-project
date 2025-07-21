@@ -4,20 +4,46 @@ import { Button } from "@/components/ui/button";
 const Certifications = () => {
   const certifications = [
     {
-      title: "Your Certification Name",
-      issuer: "Certification Authority",
-      date: "Month Year - Expiry",
-      description: "Replace with your certification details and what skills/knowledge it demonstrates.",
+      title: "JavaScript for Beginners",
+      issuer: "Udemy",
+      description: "Completed comprehensive course covering JavaScript fundamentals including arrays, loops, functions, and DOM manipulation to build dynamic web applications",
       credentialUrl: "#",
-      skills: ["Skill 1", "Skill 2", "Skill 3"]
+      skills: ["Variables & Data Types", "Functions", "DOM Manipulation & Events"]
     },
     {
-      title: "Another Certification",
-      issuer: "Another Authority",
-      date: "Month Year",
-      description: "Add more certifications here, or remove this section if you only have one.",
+      title: "Implementing DevOps with AWS",
+      issuer: "SimpliLearn",
+      description: "Completed training on AWS DevOps tools (CodePipeline, CodeBuild, CodeDeploy, CloudFormation) for automated CI/CD pipelines.",
       credentialUrl: "#",
-      skills: ["Skill A", "Skill B", "Skill C"]
+      skills: ["CI/CD Pipelines", "Infrastructure as Code", "Monitoring & Logging"]
+    },
+    {
+      title: "DevOps Practitioner Training",
+      issuer: "SimpliLearn",
+      description: "Comprehensive certification program covering CI/CD pipelines, automation, and DevOps tools including Docker, Jenkins, and Git for streamlined software delivery.",
+      credentialUrl: "#",
+      skills: ["Containerization & Docker", "Infrastructure Automation", "Configuration Management"]
+    },
+    {
+      title: "Docker Certified Associate",
+      issuer: "SimpliLearn",
+      description: "Comprehensive certification validating containerization expertise through hands-on Docker, Docker Swarm, and orchestration projects with real-world scenarios.",
+      credentialUrl: "#",
+      skills: ["Docker Engine ", "Docker Swarm", "Docker Compose"]
+    },
+    {
+      title: "Certified Kubernetes Administrator (CKA)",
+      issuer: "SimpliLearn",
+      description: "certification demonstrating expertise in deploying, managing, and troubleshooting Kubernetes clusters for cloud-native applications",
+      credentialUrl: "#",
+      skills: ["Cluster Management & Administration", "Application Deployment & Scaling", "Security & Network Configuration"]
+    },
+    {
+      title: "Full Stack Developer",
+      issuer: "SimpliLearn",
+      description: "Trained Full Stack Java Developer with certification in modern web technologies, database management, and end-to-end application deployment.",
+      credentialUrl: "#",
+      skills: ["System Architecture & Design", "Enterprise Application Development", "Database & API Design"]
     }
   ];
 

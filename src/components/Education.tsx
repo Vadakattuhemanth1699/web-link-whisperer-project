@@ -3,18 +3,18 @@ import { GraduationCap, Calendar } from "lucide-react";
 const Education = () => {
   const educationData = [
     {
-      degree: "Your Degree Name",
-      school: "Your University/School Name",
-      period: "Start Year - End Year",
-      description: "Replace with your education details, GPA, honors, relevant coursework, etc.",
-      gpa: "X.X GPA"
+      degree: "Master's",
+      school: "University of North Texas",
+      period: "2022 - 2023",
+      description: "Master's in Information Systems and Technology",
+      gpa: "3.6"
     },
     {
-      degree: "Previous Degree (if applicable)",
-      school: "Previous Institution",
-      period: "Start Year - End Year",
-      description: "Add another education entry if relevant, or remove this section if you only have one degree.",
-      gpa: "X.X GPA"
+      degree: "Bachelor's",
+      school: "KL University",
+      period: "2017 - 2021",
+      description: "Bachelor's in Computer Science and Engineering",
+      gpa: "3.0 GPA"
     }
   ];
 
