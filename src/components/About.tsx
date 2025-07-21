@@ -37,11 +37,7 @@ const About = () => {
                 <div className="flex justify-between items-center py-2 border-b border-border">
                   <span className="text-muted-foreground">Education</span>
                   <span className="font-medium">Master's in Information Systems and Technology</span>
-                {/* </div> */}
-                {/* <div className="flex justify-between items-center py-2 border-b border-border"> */}
-                  {/* <span className="text-muted-foreground">Interests</span> */}
-                 {/* <span className="font-medium">I was always eager to learn and adapt new technologies.</span> */}
-                {/* </div> */}
+                </div>
                 <div className="flex justify-between items-center py-2">
                   <span className="text-muted-foreground">Languages</span>
                   <span className="font-medium">English, Telugu, Hindi</span>
