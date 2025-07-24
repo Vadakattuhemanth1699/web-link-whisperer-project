@@ -48,12 +48,12 @@ const Education = () => {
                         <h3 className="text-2xl font-bold text-foreground mb-2">
                           {education.degree}
                         </h3>
-                        <h4 className="text-xl text-muted-foreground font-medium">
+                        <h4 className="text-xl font-medium italic" style={{ color: '#7bb3e0' }}>
                           {education.school}
                         </h4>
                       </div>
                       <div className="flex flex-col items-start md:items-end mt-4 md:mt-0">
-                        <div className="flex items-center text-muted-foreground mb-2">
+                        <div className="flex items-center mb-2" style={{ color: '#7bb3e0' }}>
                           <Calendar className="h-4 w-4 mr-2" />
                           <span className="text-sm">{education.period}</span>
                         </div>

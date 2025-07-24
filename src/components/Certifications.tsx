@@ -72,13 +72,13 @@ const Certifications = () => {
                     <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                       {cert.title}
                     </h3>
-                    <h4 className="text-lg text-muted-foreground font-medium">
+                    <h4 className="text-lg font-medium italic" style={{ color: '#7bb3e0' }}>
                       {cert.issuer}
                     </h4>
                   </div>
                 </div>
                 
-                <div className="flex items-center text-muted-foreground mb-4">
+                <div className="flex items-center mb-4" style={{ color: '#7bb3e0' }}>
                   <Calendar className="h-4 w-4 mr-2" />
                   <span className="text-sm">{cert.date}</span>
                 </div>

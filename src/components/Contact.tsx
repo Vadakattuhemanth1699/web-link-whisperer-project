@@ -11,7 +11,9 @@ const Contact = () => {
               Get In Touch
             </h2>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mb-6"></div>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            
+            {/* ✅ Updated paragraph color and style */}
+            <p className="text-lg italic max-w-2xl mx-auto" style={{ color: '#7bb3e0' }}>
               I'm always interested in new opportunities and interesting projects. 
               Whether you have a question or just want to say hi, feel free to reach out!
             </p>

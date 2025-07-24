@@ -84,6 +84,11 @@ const Experience = () => {
                         </div>
                       </div>
                     </div>
+
+                    {/* ✅ Updated color applied here */}
+                    <h2 className="text-2xl md:text-3xl mb-8 font-medium italic" style={{ color: '#7bb3e0' }}>
+                      Summary
+                    </h2>
                     
                     <p className="text-foreground/80 leading-relaxed mb-6">
                       {exp.description}

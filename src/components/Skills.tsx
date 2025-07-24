@@ -6,15 +6,14 @@ const Skills = () => {
       title: "Frontend Technologies",
       icon: Code,
       skills: [
-       " Angular 14",
-       " React",
-       " TypeScript",
-       " JavaScript",
-       " HTML5",
-       " CSS3",
-       " Bootstrap 4",
-       " jQuery"
-
+        " Angular 14",
+        " React",
+        " TypeScript",
+        " JavaScript",
+        " HTML5",
+        " CSS3",
+        " Bootstrap 4",
+        " jQuery"
       ]
     },
     {
@@ -28,7 +27,6 @@ const Skills = () => {
         "VB.NET",
         "Blazor",
         "Python",
-
       ]
     },
     {
@@ -112,7 +110,9 @@ const Skills = () => {
               Technical Skills
             </h2>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
-            <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
+
+            {/* ✅ Updated paragraph with new color and italic */}
+            <p className="text-lg mt-6 max-w-2xl mx-auto italic" style={{ color: '#7bb3e0' }}>
               I have a diverse skill set that spans multiple programming languages, frameworks, databases, and cloud technologies. My expertise allows me to build robust, scalable applications and optimize performance across various platforms.
             </p>
           </div>
