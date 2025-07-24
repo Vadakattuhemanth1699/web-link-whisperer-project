@@ -1,4 +1,4 @@
-import { Award, ExternalLink, Calendar } from "lucide-react";
+import { Award, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Certifications = () => {
@@ -34,7 +34,7 @@ const Certifications = () => {
     {
       title: "Certified Kubernetes Administrator (CKA)",
       issuer: "SimpliLearn",
-      description: "certification demonstrating expertise in deploying, managing, and troubleshooting Kubernetes clusters for cloud-native applications",
+      description: "Certification demonstrating expertise in deploying, managing, and troubleshooting Kubernetes clusters for cloud-native applications",
       credentialUrl: "#",
       skills: ["Cluster Management & Administration", "Application Deployment & Scaling", "Security & Network Configuration"]
     },
@@ -57,10 +57,10 @@ const Certifications = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             {certifications.map((cert, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-card rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-300 border border-border/50 group"
               >
@@ -77,21 +77,16 @@ const Certifications = () => {
                     </h4>
                   </div>
                 </div>
-                
-                <div className="flex items-center mb-4" style={{ color: '#7bb3e0' }}>
-                  <Calendar className="h-4 w-4 mr-2" />
-                  <span className="text-sm">{cert.date}</span>
-                </div>
-                
+
                 <p className="text-foreground/80 mb-6 leading-relaxed">
                   {cert.description}
                 </p>
-                
+
                 <div className="mb-6">
-                  <h5 className="text-sm font-semibold text-foreground/80 mb-3">Key Skills:</h5>
+                  className="px-3 py-1 bg-accent text-foreground/80 rounded-full text-sm font-medium"
                   <div className="flex flex-wrap gap-2">
                     {cert.skills.map((skill, skillIndex) => (
-                      <span 
+                      <span
                         key={skillIndex}
                         className="px-3 py-1 bg-accent text-accent-foreground rounded-full text-sm font-medium"
                       >
@@ -100,9 +95,9 @@ const Certifications = () => {
                     ))}
                   </div>
                 </div>
-                
-                <Button 
-                  variant="outline" 
+
+                <Button
+                  variant="outline"
                   className="w-full group-hover:border-primary group-hover:text-primary transition-colors"
                   onClick={() => window.open(cert.credentialUrl, '_blank')}
                 >

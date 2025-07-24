@@ -1,51 +1,38 @@
+import { Briefcase, MapPin, GraduationCap } from "lucide-react";
+
 const About = () => {
   return (
     <section id="about" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-              About Me
-            </h2>
-            <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
-          </div>
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="max-w-5xl mx-auto bg-card rounded-xl shadow-lg p-10 md:p-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">About Me</h2>
 
-          <div className="space-y-6 text-center mx-auto max-w-5xl px-4">
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              I'm a results-driven Full Stack .NET Developer with 5+ years of experience delivering enterprise-grade applications that serve 50,000+ users with 99.9% uptime. I specialize in modernizing legacy systems and have successfully led migrations from VB.NET Web Forms to Angular/.NET Core architectures, achieving 60% reduction in technical debt and 45% performance improvements. My expertise spans the complete Microsoft stack—C#, .NET Core 6, ASP.NET MVC, Angular 14, React—combined with cloud-native solutions on Azure and AWS.
+          <div className="space-y-5 text-foreground/80 text-base md:text-lg leading-relaxed">
+            <p>
+              I'm a passionate Full Stack .NET Developer with over 5 years of experience building high-impact applications for enterprise environments. From modernizing legacy systems to creating scalable cloud-native solutions, I specialize in delivering robust software that actually works—and lasts.
             </p>
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              What sets me apart is my proven track record of architecting scalable solutions that directly impact business outcomes. At Quadax, I optimized application performance to support 10,000+ concurrent users while reducing page load times by 35% through Docker containerization and Kubernetes orchestration. I've built robust CI/CD pipelines with Jenkins and Azure DevOps that cut deployment times by 40%, and my RESTful APIs and microservices architectures have consistently delivered maintainable, secure applications following SOLID principles and Clean Architecture patterns.
+            <p>
+              At Quadax, I led the migration of monolithic apps to Angular + .NET Core microservices, improving performance by 45% and reducing technical debt significantly. My work supports 50,000+ users with 99.9% uptime.
             </p>
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              I thrive in collaborative Agile environments where I can leverage my technical leadership skills and cross-functional experience. Whether I'm conducting sprint ceremonies, mentoring team members, or working directly with stakeholders to translate business requirements into technical solutions, I bring both deep technical expertise and strong communication skills. I'm passionate about staying current with emerging technologies and am actively seeking opportunities to contribute to innovative teams building next-generation applications.
+            <p>
+              I thrive in Agile teams and bring strong collaboration, mentorship, and stakeholder communication skills. Whether I’m optimizing CI/CD pipelines, architecting secure APIs, or writing clean C#, I’m always looking to push the envelope.
             </p>
           </div>
 
-          {/*
-          <div className="bg-card rounded-2xl p-8 shadow-elegant">
-            <h3 className="text-2xl font-semibold mb-6 text-foreground">Quick Facts</h3>
-            <div className="space-y-4">
-              <div className="flex justify-between items-center py-2 border-b border-border">
-                <span className="text-muted-foreground">Location</span>
-                <span className="font-medium">Plano, Texas</span>
-              </div>
-              <div className="flex justify-between items-center py-2 border-b border-border">
-                <span className="text-muted-foreground">Experience</span>
-                <span className="font-medium">5+ Years</span>
-              </div>
-              <div className="flex justify-between items-center py-2 border-b border-border">
-                <span className="text-muted-foreground">Education</span>
-                <span className="font-medium">Master's in Information Systems and Technology</span>
-              </div>
-              <div className="flex justify-between items-center py-2">
-                <span className="text-muted-foreground">Languages</span>
-                <span className="font-medium">English, Telugu, Hindi</span>
-              </div>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-foreground/70">
+            <div className="flex items-center gap-3">
+              <Briefcase className="h-5 w-5 text-primary" />
+              <span>5+ Years Experience</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <MapPin className="h-5 w-5 text-primary" />
+              <span>Plano, Texas, USA</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <GraduationCap className="h-5 w-5 text-primary" />
+              <span>Master's in Information Systems</span>
             </div>
           </div>
-          */}
-
         </div>
       </div>
     </section>
