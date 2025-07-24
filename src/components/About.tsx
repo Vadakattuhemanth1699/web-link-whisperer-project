@@ -9,8 +9,8 @@ const About = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
           </div>
-          
-          <div className="space-y-6 text-center mx-auto max-w-3xl">
+
+          <div className="space-y-6 text-center mx-auto max-w-5xl px-4">
             <p className="text-lg text-foreground/80 leading-relaxed">
               I'm a results-driven Full Stack .NET Developer with 5+ years of experience delivering enterprise-grade applications that serve 50,000+ users with 99.9% uptime. I specialize in modernizing legacy systems and have successfully led migrations from VB.NET Web Forms to Angular/.NET Core architectures, achieving 60% reduction in technical debt and 45% performance improvements. My expertise spans the complete Microsoft stack—C#, .NET Core 6, ASP.NET MVC, Angular 14, React—combined with cloud-native solutions on Azure and AWS.
             </p>

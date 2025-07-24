@@ -88,7 +88,7 @@ const Certifications = () => {
                 </p>
                 
                 <div className="mb-6">
-                  <h5 className="text-sm font-semibold text-foreground mb-3">Key Skills:</h5>
+                  <h5 className="text-sm font-semibold text-foreground/80 mb-3">Key Skills:</h5>
                   <div className="flex flex-wrap gap-2">
                     {cert.skills.map((skill, skillIndex) => (
                       <span 

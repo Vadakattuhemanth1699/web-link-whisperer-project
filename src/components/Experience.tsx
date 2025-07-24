@@ -87,9 +87,10 @@ const Experience = () => {
                     </div>
 
                     {/* ✅ Updated color applied here */}
-                    <h4 className="text-2xl md:text-3xl mb-8 font-medium italic" style={{ color: '#7bb3e0' }}>
+                    <h4 className="text-lg md:text-xl mb-6 font-medium italic" style={{ color: '#7bb3e0' }}>
                       Summary
-                    </h4>
+                      </h4>
+
 
                     <p className="text-foreground/80 leading-relaxed mb-6">
                       {exp.description}
@@ -108,7 +109,7 @@ const Experience = () => {
                     </div>
                     
                     <div>
-                      <h5 className="text-sm font-semibold text-foreground mb-3">Technologies Used:</h5>
+                      <h5 className="text-foreground/80 leading-relaxed mb-6 text-sm font-semibold">Technologies Used:</h5>
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech, techIndex) => (
                           <span 
