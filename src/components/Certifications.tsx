@@ -83,12 +83,12 @@ const Certifications = () => {
                 </p>
 
                 <div className="mb-6">
-                  className="px-3 py-1 bg-accent text-foreground/80 rounded-full text-sm font-medium"
+                  <h5 className="text-foreground/80 leading-relaxed mb-3 text-sm font-semibold">Key Skills:</h5>
                   <div className="flex flex-wrap gap-2">
                     {cert.skills.map((skill, skillIndex) => (
                       <span
                         key={skillIndex}
-                        className="px-3 py-1 bg-accent text-accent-foreground rounded-full text-sm font-medium"
+                        className="px-3 py-1 bg-accent text-foreground/80 rounded-full text-sm font-medium"
                       >
                         {skill}
                       </span>
