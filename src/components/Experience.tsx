@@ -76,20 +76,21 @@ const Experience = () => {
                         <h4 className="text-xl text-primary font-semibold mb-2">
                           {exp.company}
                         </h4>
-                        <div className="flex items-center text-muted-foreground mb-4">
-                          <MapPin className="h-4 w-4 mr-2" />
-                          <span className="text-sm mr-4">{exp.location}</span>
-                          <Calendar className="h-4 w-4 mr-2" />
-                          <span className="text-sm">{exp.period}</span>
+                        <div className="flex items-center text-foreground/80 mb-4">
+                        <MapPin className="h-4 w-4 mr-2 text-foreground/80" />
+                        <span className="text-sm mr-4">{exp.location}</span>
+                        <Calendar className="h-4 w-4 mr-2 text-foreground/80" />
+                        <span className="text-sm">{exp.period}</span>
                         </div>
+
                       </div>
                     </div>
 
                     {/* ✅ Updated color applied here */}
-                    <h2 className="text-2xl md:text-3xl mb-8 font-medium italic" style={{ color: '#7bb3e0' }}>
+                    <h4 className="text-2xl md:text-3xl mb-8 font-medium italic" style={{ color: '#7bb3e0' }}>
                       Summary
-                    </h2>
-                    
+                    </h4>
+
                     <p className="text-foreground/80 leading-relaxed mb-6">
                       {exp.description}
                     </p>

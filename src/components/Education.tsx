@@ -14,7 +14,7 @@ const Education = () => {
       school: "KL University",
       period: "2017 - 2021",
       description: "Bachelor's in Computer Science and Engineering",
-      gpa: "3.0 GPA"
+      gpa: "3.0"
     }
   ];
 
@@ -58,7 +58,7 @@ const Education = () => {
                           <span className="text-sm">{education.period}</span>
                         </div>
                         {education.gpa && (
-                          <div className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
+                          <div className="bg-transparent text-foreground/80 px-3 py-1 rounded-full text-sm font-medium leading-relaxed">
                             {education.gpa}
                           </div>
                         )}

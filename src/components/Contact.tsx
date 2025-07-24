@@ -27,10 +27,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Email</h3>
-                  <p className="text-muted-foreground">Hemanth.kumar8357@gmail.com</p>
+                  <p className="text-foreground/80">Hemanth.kumar8357@gmail.com</p>
                   <p className="text-sm text-foreground/60 mt-1"></p>
                 </div>
               </div>
+           
               
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
@@ -38,7 +39,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Phone</h3>
-                  <p className="text-muted-foreground">+1 (915) 308-1699</p>
+                  <p className="text-foreground/80">+1 (915) 308-1699</p>
                   <p className="text-sm text-foreground/60 mt-1"></p>
                 </div>
               </div>
@@ -49,11 +50,10 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Location</h3>
-                  <p className="text-muted-foreground">Plano, Texas, USA</p>
+                  <p className="text-foreground/80">Plano, Texas, USA</p>
                   <p className="text-sm text-foreground/60 mt-1"></p>
                 </div>
-              </div>
-              
+              </div>       
               <div className="pt-6">
                 <h3 className="text-lg font-semibold text-foreground mb-6">Connect with me</h3>
                 <div className="flex space-x-4">

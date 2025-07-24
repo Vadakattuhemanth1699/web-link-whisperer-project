@@ -113,7 +113,7 @@ const Skills = () => {
 
             {/* ✅ Updated paragraph with new color and italic */}
             <p className="text-lg mt-6 max-w-2xl mx-auto italic" style={{ color: '#7bb3e0' }}>
-              I have a diverse skill set that spans multiple programming languages, frameworks, databases, and cloud technologies. My expertise allows me to build robust, scalable applications and optimize performance across various platforms.
+              Proficient in diverse programming languages, frameworks, databases, and cloud technologies, enabling the development of robust, scalable applications optimized for cross-platform performance.
             </p>
           </div>
           
