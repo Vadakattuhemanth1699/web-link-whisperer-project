@@ -15,10 +15,10 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
               Hemanth Kumar V
             </h1>
-            <h2 className="text-2xl md:text-3xl mb-8 font-medium" style={{ color: '#7bb3e0' }}>
+            <h2 className="text-2xl md:text-3xl mb-8 font-medium italic" style={{ color: '#7bb3e0' }}>
               Full Stack DotNet Developer
             </h2>
-            <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed" style={{ color: '#7bb3e0' }}>
+            <p className="text-lg md:text-xl text-foreground/80 mb-12 max-w-3xl mx-auto leading-relaxed">
               I am a passionate Full Stack DotNet Developer with expertise in building robust web applications.
               My journey in technology has been driven by a love for problem-solving and a desire to create impactful solutions.
             </p>
