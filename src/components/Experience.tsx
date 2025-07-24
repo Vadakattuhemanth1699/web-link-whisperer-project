@@ -3,30 +3,44 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, Country",
-      period: "Start Date - End Date (or Present)",
-      description: "Replace with your job description. Describe your key responsibilities, achievements, and impact. Use specific examples and metrics when possible.",
-      technologies: ["Technology 1", "Technology 2", "Technology 3", "Technology 4"],
+      title: "Full Stack .NET Developer",
+      company: "Quadax",
+      location: "Cleveland, Ohio",
+      period: "Jan 2023 - Present",
+      description: "Currently leading full-stack development initiatives at Quadax, where I architect and implement mission-critical healthcare applications supporting 10,000+ concurrent users. Key achievements include engineering responsive Angular 14 SPAs with seamless cross-device compatibility, optimizing application performance through Python automation and Docker containerization for 35% faster load times, and establishing robust CI/CD pipelines that reduced deployment cycles by 40%. My work involves comprehensive modernization efforts, including migrating legacy .NET Framework applications to .NET 8 and transforming VB.NET Web Forms into scalable Angular/.NET 8 microservices, implementing secure JWT-based authentication, and ensuring WCAG compliance for accessibility. This ongoing engagement showcases my ability to deliver enterprise-scale solutions in regulated industries while maintaining high performance standards and healthcare compliance requirements",
+      technologies: [ "Angular 14", ".NET 8", "C#","Azure","Docker", "Python", "CI/CD", "SQL Server" ],
       achievements: [
-        "Achievement or project you're proud of",
-        "Another significant contribution",
-        "Quantifiable result or improvement"
+        "Performance Optimization Excellence",
+        "Legacy Modernization Success",
+        "DevOps Transformation Impact"
       ]
     },
     {
-      title: "Previous Job Title",
-      company: "Previous Company",
-      location: "City, Country",
-      period: "Start Date - End Date",
-      description: "Add another work experience, internship, or significant project. Remove this if you only have one position to showcase.",
-      technologies: ["Tech A", "Tech B", "Tech C"],
+      title: "Full Stack .NET Developer",
+      company: "HSBC Bank",
+      location: "Hyderabad, INDIA",
+      period: "June 2020 - Nov 2021",
+      description: "Delivered comprehensive full-stack development solutions for HSBC's banking platform, serving 25,000+ users. Spearheaded the complete modernization of legacy VB.NET Web Forms into a cutting-edge React frontend with .NET Core Web API backend, achieving remarkable 40% reduction in maintenance costs and 50% faster development cycles. Key technical contributions included implementing real-time communication through SignalR integration, developing robust RESTful APIs with SQL Server optimization, and establishing secure OAuth 2.0/JWT authentication protocols. Successfully containerized applications using Docker and Kubernetes while building comprehensive ETL processes with SSIS for seamless data integration. Led Agile development practices and utilized Azure DevOps for CI/CD automation, ensuring reliable deployment workflows and maintaining high-quality standards through extensive NUnit and MS Test coverage in this mission-critical banking environment",
+      technologies: ["React", ".Net Core","C#", "SQL Server", "Azure DevOps", " AWS", "Entity Framework"],
       achievements: [
-        "Key achievement from this role",
-        "Another important contribution"
+        "Legacy System Modernization",
+        "Real-Time Banking Solutions",
+        "Secure API Architecture & Authentication"
       ]
     }
+    {
+      title: "DotNet Developer",
+      company: "Luxoft",
+      location: "Bangalore, INDIA",
+      period: "March 2018 - May 2020",
+      description: "Developed comprehensive web applications for enterprise clients at Luxoft through strategic collaboration with stakeholders and business analysts. Architected scalable applications using C#, .NET Framework, and React while leveraging AWS cloud services including EC2, S3, RDS, and Lambda functions for optimal performance and reliability. Key technical contributions included designing robust RESTful APIs with .NET Core, implementing complex SQL optimization strategies, and developing seamless integration patterns using WCF and SOAP protocols. Demonstrated technical leadership by managing sprint progress, resolving cross-functional bottlenecks, and ensuring all deliverables met stringent business requirements. Successfully integrated legacy VB.NET systems with modern React frontends, utilized Kendo UI for enhanced user experiences, and implemented serverless computing solutions that reduced operational overhead while maintaining enterprise-level security and performance standards",
+      technologies: ["C#", ".React",".Net framework", "AWS", "SQL", " ASP.NET MVC", "Restful APIs", "AWS"],
+      achievements: [
+        "Enterprise Web Application Development",
+        "RESTful API Design & Implementation",
+        "Serverless Computing Optimization"
+      ]
+    },
   ];
 
   return (

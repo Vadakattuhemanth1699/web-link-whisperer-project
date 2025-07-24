@@ -3,51 +3,102 @@ import { Code, Database, Cloud, Wrench } from "lucide-react";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Programming Languages",
+      title: "Frontend Technologies",
       icon: Code,
       skills: [
-        "JavaScript/TypeScript",
-        "Python",
-        "Java", 
-        "C++",
-        "Go",
-        "Add your languages"
+       " Angular 14",
+       " React",
+       " TypeScript",
+       " JavaScript",
+       " HTML5",
+       " CSS3",
+       " Bootstrap 4",
+       " jQuery"
+
       ]
     },
     {
-      title: "Frameworks & Libraries",
+      title: "Backend Technologies",
       icon: Wrench,
       skills: [
-        "React",
-        "Node.js",
-        "Express",
-        "Next.js",
-        "Django",
-        "Add your frameworks"
+        "C#",
+        ".NET Core 6",
+        "ASP.NET MVC",
+        "ASP.NET Framework",
+        "VB.NET",
+        "Blazor",
+        "Python",
+
       ]
     },
     {
       title: "Databases & Storage",
       icon: Database,
       skills: [
-        "PostgreSQL",
-        "MongoDB",
-        "Redis",
-        "MySQL",
-        "Firebase",
-        "Add your databases"
+        "SQL Server",
+        "T-SQL",
+        "ADO.NET",
+        "LINQ",
+        "Entity Framework", "SSIS"
       ]
     },
     {
-      title: "Cloud & DevOps",
+      title: "API Development",
       icon: Cloud,
       skills: [
-        "AWS",
+        "RESTful Web API",
+        "SOAP",
+        "JWT Authentication",
+        "Swagger",
+        "Postman",
+        "WCF"
+      ]
+    },
+    {
+      title: "Cloud Platforms",
+      icon: Cloud,
+      skills: [
+        "Microsoft Azure",
+        "AWS EC2",
+        "AWS S3",
+        "AWS Lambda",
+        "AWS RDS",
+        "Azure Functions"
+      ]
+    },
+    {
+      title: "DevOps & Deployment",
+      icon: Cloud,
+      skills: [
         "Docker",
         "Kubernetes",
+        "Git",
+        "Azure DevOps",
         "CI/CD",
-        "Terraform",
-        "Add your tools"
+        "Jenkins"
+      ]
+    },
+    {
+      title: "Testing Frameworks",
+      icon: Cloud,
+      skills: [
+        "xUnit",
+        "NUnit",
+        "MS Test",
+        "Jasmine",
+        "Karma",
+        "Protractor"
+      ]
+    },
+    {
+      title: "Development Tools",
+      icon: Cloud,
+      skills: [
+        "Visual Studio 2022",
+        "VS Code",
+        "SSRS",
+        "SignalR",
+        "Crystal Reports"
       ]
     }
   ];
@@ -62,8 +113,7 @@ const Skills = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
             <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-              Replace this section with your actual technical skills. Organize them by category 
-              and include the technologies you're most comfortable with.
+              I have a diverse skill set that spans multiple programming languages, frameworks, databases, and cloud technologies. My expertise allows me to build robust, scalable applications and optimize performance across various platforms.
             </p>
           </div>
           
@@ -107,13 +157,17 @@ const Skills = () => {
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 "Problem Solving",
-                "Team Leadership", 
+                "Team Leadership",
                 "Agile/Scrum",
                 "Technical Writing",
-                "Open Source",
-                "Machine Learning",
-                "Add your soft skills",
-                "Add your interests"
+                "System Architecture",
+                "Code Review",
+                "Mentoring",
+                "Cross-functional Collaboration",
+                "Cloud Computing",
+                "DevOps Practices",
+                "Continuous Learning",
+                "Technology Innovation"
               ].map((skill, index) => (
                 <span 
                   key={index}

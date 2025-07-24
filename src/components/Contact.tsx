@@ -26,7 +26,7 @@ const Contact = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Email</h3>
                   <p className="text-muted-foreground">your.email@example.com</p>
-                  <p className="text-sm text-foreground/60 mt-1">Replace with your actual email</p>
+                  <p className="text-sm text-foreground/60 mt-1"></p>
                 </div>
               </div>
               
@@ -36,8 +36,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Phone</h3>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                  <p className="text-sm text-foreground/60 mt-1">Replace with your number</p>
+                  <p className="text-muted-foreground">+1 (915) 308-1699</p>
+                  <p className="text-sm text-foreground/60 mt-1"></p>
                 </div>
               </div>
               
@@ -47,8 +47,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Location</h3>
-                  <p className="text-muted-foreground">Your City, Country</p>
-                  <p className="text-sm text-foreground/60 mt-1">Replace with your location</p>
+                  <p className="text-muted-foreground">Plano, Texas</p>
+                  <p className="text-sm text-foreground/60 mt-1"></p>
                 </div>
               </div>
               
@@ -102,7 +102,7 @@ const Contact = () => {
                     type="email" 
                     id="email"
                     className="w-full px-4 py-3 bg-background border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    placeholder="your.email@example.com"
+                    placeholder="hemanth.kumar8357@gmail.com"
                   />
                 </div>
                 <div>

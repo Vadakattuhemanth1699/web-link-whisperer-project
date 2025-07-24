@@ -23,6 +23,7 @@ const About = () => {
               </p>
             </div>
             
+            {/* 
             <div className="bg-card rounded-2xl p-8 shadow-elegant">
               <h3 className="text-2xl font-semibold mb-6 text-foreground">Quick Facts</h3>
               <div className="space-y-4">
@@ -44,6 +45,7 @@ const About = () => {
                 </div>
               </div>
             </div>
+            */}
           </div>
         </div>
       </div>
