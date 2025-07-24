@@ -27,7 +27,7 @@ const Experience = () => {
         "Real-Time Banking Solutions",
         "Secure API Architecture & Authentication"
       ]
-    }
+    },
     {
       title: "DotNet Developer",
       company: "Luxoft",
