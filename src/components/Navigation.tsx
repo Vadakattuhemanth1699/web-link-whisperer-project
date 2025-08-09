@@ -10,9 +10,8 @@ const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
@@ -22,23 +21,23 @@ const Navigation = () => {
     { name: "Certifications", href: "#certifications" },
     { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
-    { name: "Contact", href: "#contact" }
+    { name: "Contact", href: "#contact" },
   ];
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    if (element) element.scrollIntoView({ behavior: "smooth" });
     setIsOpen(false);
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-background/80 backdrop-blur-md shadow-elegant' 
-        : 'bg-transparent'
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-background/80 backdrop-blur-md shadow-elegant"
+          : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -49,18 +48,22 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <button
+              <a
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                className="text-foreground/80 hover:text-primary transition-colors font-medium relative group"
+                href={item.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(item.href);
+                }}
+                className="nav-link text-foreground/80 hover:text-primary transition-colors font-medium relative group"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </button>
+              </a>
             ))}
-            <Button 
+            <Button
               className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => scrollToSection("#contact")}
             >
               Get In Touch
             </Button>
@@ -70,8 +73,14 @@ const Navigation = () => {
           <button
             className="md:hidden p-2 rounded-lg hover:bg-accent transition-colors"
             onClick={() => setIsOpen(!isOpen)}
+            style={{ color: "hsl(var(--foreground))" }}
+            aria-label="Toggle menu"
           >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isOpen ? (
+              <X className="h-6 w-6" stroke="currentColor" fill="none" />
+            ) : (
+              <Menu className="h-6 w-6" stroke="currentColor" fill="none" />
+            )}
           </button>
         </div>
 
@@ -80,17 +89,21 @@ const Navigation = () => {
           <div className="md:hidden absolute top-16 left-0 right-0 bg-background/95 backdrop-blur-md shadow-elegant border-t border-border">
             <div className="px-6 py-4 space-y-4">
               {navItems.map((item) => (
-                <button
+                <a
                   key={item.name}
-                  onClick={() => scrollToSection(item.href)}
+                  href={item.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(item.href);
+                  }}
                   className="block w-full text-left text-foreground/80 hover:text-primary transition-colors font-medium py-2"
                 >
                   {item.name}
-                </button>
+                </a>
               ))}
-              <Button 
+              <Button
                 className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300 mt-4"
-                onClick={() => scrollToSection('#contact')}
+                onClick={() => scrollToSection("#contact")}
               >
                 Get In Touch
               </Button>
