@@ -16,12 +16,11 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight" style={{ color: "#22c55e" }}>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-primary">
               Hemanth Kumar V
             </h1>
             <h2
-              className="text-2xl md:text-3xl mb-8 font-medium italic tracking-tight"
-              style={{ color: "#22c55e" }}
+              className="text-2xl md:text-3xl mb-8 font-medium italic tracking-tight text-secondary"
             >
               Full Stack DotNet Developer
             </h2>
@@ -34,15 +33,14 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            <Button size="lg" className="hover: transition-all duration-300 rounded-full px-8 font-semibold shadow-lg hover:shadow-xl hover:scale-105 text-white" style={{ backgroundImage: "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" }}>
+            <Button size="lg" className="transition-all duration-300 rounded-full px-8 font-semibold shadow-lg hover:shadow-xl hover:scale-105 text-white bg-gradient-primary">
               <Mail className="mr-2 h-5 w-5" />
               Get In Touch
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="hover:shadow-elegant transition-all duration-300 border-2 rounded-full px-8 font-semibold shadow-md hover:shadow-lg hover:scale-105"
-              style={{ borderColor: "#001f3f", color: "#001f3f", backgroundImage: "linear-gradient(to right, rgba(34, 197, 94, 0.05), rgba(0, 31, 63, 0.05))" }}
+              className="hover:shadow-elegant transition-all duration-300 border-2 rounded-full px-8 font-semibold shadow-md hover:shadow-lg hover:scale-105 border-secondary text-secondary bg-gradient-subtle"
               onClick={() => window.open("/resume/Hemanth_Kumar_Resume.pdf", "_blank")}
             >
               <Download className="mr-2 h-5 w-5" />
@@ -57,58 +55,31 @@ const Hero = () => {
           >
             <a
               href="https://github.com/Vadakattuhemanth1699"
-              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg hover:shadow-green-500/50"
-              style={{ backgroundColor: "#f8fafc" }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundImage = "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)";
-                e.currentTarget.style.backgroundColor = "transparent";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundImage = "none";
-                e.currentTarget.style.backgroundColor = "#f8fafc";
-              }}
+              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg bg-card group hover:bg-gradient-primary"
               aria-label="Visit GitHub profile"
               role="listitem"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Github className="h-6 w-6" style={{ color: "#22c55e" }} aria-hidden="true" />
+              <Github className="h-6 w-6 text-primary group-hover:text-white" aria-hidden="true" />
             </a>
             <a
               href="https://www.linkedin.com/in/hemanth-kumar-89821a31a/"
-              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg hover:shadow-green-500/50"
-              style={{ backgroundColor: "#f8fafc" }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundImage = "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)";
-                e.currentTarget.style.backgroundColor = "transparent";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundImage = "none";
-                e.currentTarget.style.backgroundColor = "#f8fafc";
-              }}
+              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg bg-card group hover:bg-gradient-primary"
               aria-label="Visit LinkedIn profile"
               role="listitem"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Linkedin className="h-6 w-6" style={{ color: "#22c55e" }} aria-hidden="true" />
+              <Linkedin className="h-6 w-6 text-primary group-hover:text-white" aria-hidden="true" />
             </a>
             <a
               href="mailto:hemanth.kumar8357@gmail.com"
-              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg hover:shadow-green-500/50"
-              style={{ backgroundColor: "#f8fafc" }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundImage = "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)";
-                e.currentTarget.style.backgroundColor = "transparent";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundImage = "none";
-                e.currentTarget.style.backgroundColor = "#f8fafc";
-              }}
+              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg bg-card group hover:bg-gradient-primary"
               aria-label="Send email"
               role="listitem"
             >
-              <Mail className="h-6 w-6" style={{ color: "#22c55e" }} aria-hidden="true" />
+              <Mail className="h-6 w-6 text-primary group-hover:text-white" aria-hidden="true" />
             </a>
           </div>
         </div>

@@ -62,10 +62,10 @@ const Certifications = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "#22c55e" }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
               Certifications
             </h2>
-            <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: "#22c55e" }}></div>
+            <div className="w-24 h-1 mx-auto rounded-full bg-primary"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -75,14 +75,14 @@ const Certifications = () => {
                 className="bg-card rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-300 border border-border/50 group"
               >
                 <div className="flex items-start gap-4 mb-6">
-                  <div className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 hover:scale-110" style={{ backgroundImage: "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" }}>
+                  <div className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 hover:scale-110 bg-gradient-primary">
                     <Award className="h-7 w-7 text-white drop-shadow-lg" />
                   </div>
                   <div className="flex-grow">
                     <h3 className="text-xl font-bold text-foreground mb-2 group-hover: transition-colors">
                       {cert.title}
                     </h3>
-                    <h4 className="text-lg font-medium italic" style={{ color: "#22c55e" }}>
+                    <h4 className="text-lg font-medium italic text-primary">
                       {cert.issuer}
                     </h4>
                   </div>
@@ -96,7 +96,7 @@ const Certifications = () => {
                     {cert.skills.map((skill, skillIndex) => (
                       <span
                         key={skillIndex}
-                        className="px-3 py-1 bg-green-50 text-green-900 rounded-full text-sm font-medium border border-green-200"
+                        className="px-3 py-1 bg-primary text-white rounded-full text-sm font-medium"
                       >
                         {skill}
                       </span>

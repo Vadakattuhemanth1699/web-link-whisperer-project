@@ -42,7 +42,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="text-2xl font-bold" style={{ color: "#22c55e" }}>
+          <div className="text-2xl font-bold text-primary">
             <a href="#home" aria-label="Hemanth's Portfolio - Home">
               <i>Hemanth's Portfolio</i>
             </a>
@@ -63,10 +63,9 @@ const Navigation = () => {
               </button>
             ))}
             <Button 
-              className="transition-all duration-300 hover:scale-105 text-white"
+              className="transition-all duration-300 hover:scale-105 text-white bg-gradient-primary"
               onClick={() => scrollToSection('#contact')}
               aria-label="Get in touch - Contact section"
-              style={{ backgroundImage: "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" }}
             >
               Get In Touch
             </Button>
@@ -100,10 +99,9 @@ const Navigation = () => {
                 </button>
               ))}
               <Button 
-                className="w-full transition-all duration-300 hover:scale-105 text-white mt-4"
+                className="w-full transition-all duration-300 hover:scale-105 text-white mt-4 bg-gradient-primary"
                 onClick={() => scrollToSection('#contact')}
                 aria-label="Get in touch - Contact section"
-                style={{ backgroundImage: "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" }}
               >
                 Get In Touch
               </Button>

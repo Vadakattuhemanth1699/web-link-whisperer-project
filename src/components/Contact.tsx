@@ -38,11 +38,11 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "#22c55e" }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
               Get In Touch
             </h2>
-            <div className="w-24 h-1 mx-auto rounded-full mb-6" style={{ backgroundColor: "#22c55e" }}></div>
-            <p className="text-lg italic max-w-2xl mx-auto" style={{ color: "#22c55e" }}>
+            <div className="w-24 h-1 mx-auto rounded-full mb-6 bg-primary"></div>
+            <p className="text-lg italic max-w-2xl mx-auto text-secondary">
               I'm always interested in new opportunities and interesting projects.
               Whether you have a question or just want to say hi, feel free to reach out!
             </p>
@@ -52,7 +52,7 @@ const Contact = () => {
             {/* Left Side: Contact Info */}
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 hover:scale-110" style={{ backgroundImage: "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" }}>
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 hover:scale-110 bg-gradient-primary">
                   <Mail className="h-6 w-6 text-white drop-shadow-lg" />
                 </div>
                 <div>
@@ -62,7 +62,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 hover:scale-110" style={{ backgroundImage: "linear-gradient(135deg, #001f3f 0%, #22c55e 100%)" }}>
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 hover:scale-110 bg-gradient-primary">
                   <Phone className="h-6 w-6 text-white drop-shadow-lg" />
                 </div>
                 <div>
@@ -72,7 +72,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 hover:scale-110" style={{ backgroundImage: "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" }}>
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 hover:scale-110 bg-gradient-primary">
                   <MapPin className="h-6 w-6 text-white drop-shadow-lg" />
                 </div>
                 <div>
@@ -86,25 +86,25 @@ const Contact = () => {
                 <div className="flex space-x-4">
                   <a
                     href="https://github.com/Vadakattuhemanth1699"
-                    className="w-12 h-12 bg-card hover:bg-green-100 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-125 shadow-md hover:shadow-xl"
+                    className="w-12 h-12 bg-card rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-125 shadow-md hover:shadow-xl group hover:bg-gradient-primary"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    <Github className="h-5 w-5" />
+                    <Github className="h-5 w-5 text-primary group-hover:text-white" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/hemanth-kumar-89821a31a/"
-                    className="w-12 h-12 bg-card hover:bg-green-100 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-125 shadow-md hover:shadow-xl"
+                    className="w-12 h-12 bg-card rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-125 shadow-md hover:shadow-xl group hover:bg-gradient-primary"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    <Linkedin className="h-5 w-5" />
+                    <Linkedin className="h-5 w-5 text-primary group-hover:text-white" />
                   </a>
                   <a
                     href="mailto:hemanth.kumar8357@gmail.com"
-                    className="w-12 h-12 bg-card hover:bg-green-100 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-125 shadow-md hover:shadow-xl"
+                    className="w-12 h-12 bg-card rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-125 shadow-md hover:shadow-xl group hover:bg-gradient-primary"
                   >
-                    <Mail className="h-5 w-5" />
+                    <Mail className="h-5 w-5 text-primary group-hover:text-white" />
                   </a>
                 </div>
               </div>
@@ -112,7 +112,7 @@ const Contact = () => {
 
             {/* Right Side: Contact Form */}
             <div className="bg-card rounded-2xl p-8 shadow-elegant border border-border/50">
-              <h3 className="text-2xl font-bold mb-6" style={{ color: '#001f3f' }}>Send me a message</h3>
+              <h3 className="text-2xl font-bold mb-6 text-primary">Send me a message</h3>
               <form
                 name="contact"
                 method="POST"
@@ -167,8 +167,7 @@ const Contact = () => {
                 <Button
                   type="submit"
                   disabled={loading}
-                  className="w-full text-white transition-all duration-300 hover:scale-105"
-                  style={{ backgroundImage: "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" }}
+                  className="w-full text-white transition-all duration-300 hover:scale-105 bg-gradient-primary"
                   aria-busy={loading}
                 >
                   {loading ? "Sending..." : "Send Message"}

@@ -107,13 +107,13 @@ const Skills = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "#22c55e" }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
               Technical Skills
             </h2>
-            <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: "#22c55e" }}></div>
+            <div className="w-24 h-1 mx-auto rounded-full bg-primary"></div>
 
             {/* ✅ Updated paragraph with new color and italic */}
-            <p className="text-lg mt-6 max-w-2xl mx-auto italic" style={{ color: '#22c55e' }}>
+            <p className="text-lg mt-6 max-w-2xl mx-auto italic text-secondary">
               Proficient in diverse programming languages, frameworks, databases, and cloud technologies, enabling the development of robust, scalable applications optimized for cross-platform performance.
             </p>
           </div>
@@ -127,10 +127,10 @@ const Skills = () => {
                   className="bg-card rounded-2xl p-6 shadow-elegant hover:shadow-glow transition-all duration-300 border border-border/50 group hover:-translate-y-1 hover:border-green-200"
                 >
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 rounded-xl flex items-center justify-center mr-4 transition-all duration-300 hover:scale-110" style={{ backgroundImage: "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" }}>
-                      <IconComponent className="h-6 w-6 text-white drop-shadow-lg" />
+                    <div className="w-12 h-12 rounded-xl flex items-center justify-center mr-4 transition-all duration-300 hover:scale-110 bg-gradient-primary">
+                      <IconComponent className="h-6 w-6 text-secondary drop-shadow-lg" />
                     </div>
-                    <h3 className="text-lg font-bold text-foreground group-hover: transition-colors">
+                    <h3 className="text-lg font-bold text-secondary group-hover: transition-colors">
                       {category.title}
                     </h3>
                   </div>
@@ -142,7 +142,7 @@ const Skills = () => {
                         className="flex items-center justify-between p-2 rounded-lg hover:bg-green-50 transition-colors"
                       >
                         <span className="text-foreground/80 font-medium">{skill}</span>
-                        <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#001f3f' }}></div>
+                        <div className="w-2 h-2 rounded-full bg-black"></div>
                       </div>
                     ))}
                   </div>
@@ -172,8 +172,7 @@ const Skills = () => {
               ].map((skill, index) => (
                 <span 
                   key={index}
-                  className="px-4 py-2 rounded-full font-medium transition-all duration-300 cursor-default text-white hover:shadow-lg hover:scale-105"
-                  style={{ backgroundImage: index % 2 === 0 ? "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" : "linear-gradient(135deg, #001f3f 0%, #22c55e 100%)" }}
+                  className="px-4 py-2 rounded-full font-medium transition-all duration-300 cursor-default text-white hover:shadow-lg hover:scale-105 bg-gradient-primary"
                 >
                   {skill}
                 </span>

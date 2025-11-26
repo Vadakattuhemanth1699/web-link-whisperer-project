@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-5xl mx-auto bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-10 md:p-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-8 tracking-tight">About Me</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 tracking-tight text-primary">About Me</h2>
 
           <div className="space-y-6 text-foreground/75 text-base md:text-lg leading-relaxed tracking-wide">
             <p>
@@ -21,15 +21,15 @@ const About = () => {
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
             <div className="flex items-center gap-4 p-4 rounded-xl hover:bg-green-50 transition-colors duration-300">
-              <Briefcase className="h-6 w-6 flex-shrink-0" />
+              <Briefcase className="h-6 w-6 flex-shrink-0 text-secondary"/>
               <span className="text-foreground/80">5+ Years Experience</span>
             </div>
             <div className="flex items-center gap-4 p-4 rounded-xl hover:bg-green-50 transition-colors duration-300">
-              <MapPin className="h-6 w-6 flex-shrink-0" />
+              <MapPin className="h-6 w-6 flex-shrink-0 text-secondary" />
               <span className="text-foreground/80">Plano, Texas, USA</span>
             </div>
             <div className="flex items-center gap-4 p-4 rounded-xl hover:bg-green-50 transition-colors duration-300">
-              <GraduationCap className="h-6 w-6 flex-shrink-0" />
+              <GraduationCap className="h-6 w-6 flex-shrink-0 text-secondary" />
               <span className="text-foreground/80">Master's in Information Systems & Technology</span>
             </div>
           </div>
