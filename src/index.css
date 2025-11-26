@@ -19,8 +19,8 @@ All colors MUST be HSL.
 @layer utilities {
   :root {
     /* hex tokens for JS-friendly usage */
-    --primary-hex: #44a280;
-    --secondary-hex: #3392a5;
+    --primary-hex: #da6fa3;
+    --secondary-hex: #701842;
     --primary-hsl: 34 197 94;
     --secondary-hsl: 0 31 63;
     /* convenience gradient that blends primary -> secondary */
