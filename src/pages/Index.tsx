@@ -6,11 +6,13 @@ import Certifications from "@/components/Certifications";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
+import ActionIcon from "@/components/ActionIcon";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <ActionIcon />
       <main>
         <section id="home">
           <Hero />
