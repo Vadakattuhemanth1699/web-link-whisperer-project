@@ -3,32 +3,30 @@ import { Github, Linkedin, Mail, Download } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-subtle relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-subtle relative overflow-hidden" aria-label="Hero section">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-      <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-primary rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
+      <div className="absolute inset-0 bg-grid-pattern opacity-5" aria-hidden="true"></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-primary rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" aria-hidden="true"></div>
       <div
         className="absolute bottom-20 right-10 w-72 h-72 bg-accent rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"
         style={{ animationDelay: "2s" }}
+        aria-hidden="true"
       ></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight" style={{ color: "#22c55e" }}>
               Hemanth Kumar V
             </h1>
             <h2
-              className="text-2xl md:text-3xl mb-8 font-medium italic"
-              style={{ color: "#7bb3e0" }}
+              className="text-2xl md:text-3xl mb-8 font-medium italic tracking-tight"
+              style={{ color: "#22c55e" }}
             >
               Full Stack DotNet Developer
             </h2>
-            <p className="text-lg md:text-xl text-foreground/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              I am a passionate Full Stack DotNet Developer with expertise in
-              building robust web applications. My journey in technology has
-              been driven by a love for problem-solving and a desire to create
-              impactful solutions.
+            <p className="text-lg md:text-xl text-foreground/70 mb-12 max-w-3xl mx-auto leading-relaxed tracking-wide">
+              Full Stack .NET developer with 5+ years of experience architecting and delivering enterprise-grade web applications. I specialize in crafting scalable solutions using C#, ASP.NET, Angular, and cloud technologies—transforming complex challenges into elegant, high-performance systems that drive real business impact.
             </p>
           </div>
 
@@ -36,15 +34,15 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300">
+            <Button size="lg" className="hover: transition-all duration-300 rounded-full px-8 font-semibold shadow-lg hover:shadow-xl hover:scale-105 text-white" style={{ backgroundImage: "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" }}>
               <Mail className="mr-2 h-5 w-5" />
               Get In Touch
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="hover:shadow-elegant transition-all duration-300 border-2"
-              style={{ borderColor: "#7bb3e0", color: "#7bb3e0" }}
+              className="hover:shadow-elegant transition-all duration-300 border-2 rounded-full px-8 font-semibold shadow-md hover:shadow-lg hover:scale-105"
+              style={{ borderColor: "#001f3f", color: "#001f3f", backgroundImage: "linear-gradient(to right, rgba(34, 197, 94, 0.05), rgba(0, 31, 63, 0.05))" }}
               onClick={() => window.open("/resume/Hemanth_Kumar_Resume.pdf", "_blank")}
             >
               <Download className="mr-2 h-5 w-5" />
@@ -53,50 +51,64 @@ const Hero = () => {
           </div>
 
           <div
-            className="flex justify-center space-x-6 animate-fade-in"
+            className="flex justify-center space-x-8 animate-fade-in"
             style={{ animationDelay: "0.4s" }}
+            role="list"
           >
             <a
               href="https://github.com/Vadakattuhemanth1699"
-              className="p-3 rounded-full bg-card transition-all duration-300 hover:scale-110 shadow-elegant"
+              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg hover:shadow-green-500/50"
               style={{ backgroundColor: "#f8fafc" }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.backgroundColor = "#7bb3e0")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.backgroundColor = "#f8fafc")
-              }
-              aria-label="GitHub Profile"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundImage = "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)";
+                e.currentTarget.style.backgroundColor = "transparent";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundImage = "none";
+                e.currentTarget.style.backgroundColor = "#f8fafc";
+              }}
+              aria-label="Visit GitHub profile"
+              role="listitem"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <Github className="h-6 w-6" style={{ color: "#7bb3e0" }} />
+              <Github className="h-6 w-6" style={{ color: "#22c55e" }} aria-hidden="true" />
             </a>
             <a
               href="https://www.linkedin.com/in/hemanth-kumar-89821a31a/"
-              className="p-3 rounded-full bg-card transition-all duration-300 hover:scale-110 shadow-elegant"
+              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg hover:shadow-green-500/50"
               style={{ backgroundColor: "#f8fafc" }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.backgroundColor = "#7bb3e0")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.backgroundColor = "#f8fafc")
-              }
-              aria-label="LinkedIn Profile"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundImage = "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)";
+                e.currentTarget.style.backgroundColor = "transparent";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundImage = "none";
+                e.currentTarget.style.backgroundColor = "#f8fafc";
+              }}
+              aria-label="Visit LinkedIn profile"
+              role="listitem"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <Linkedin className="h-6 w-6" style={{ color: "#7bb3e0" }} />
+              <Linkedin className="h-6 w-6" style={{ color: "#22c55e" }} aria-hidden="true" />
             </a>
             <a
               href="mailto:hemanth.kumar8357@gmail.com"
-              className="p-3 rounded-full bg-card transition-all duration-300 hover:scale-110 shadow-elegant"
+              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg hover:shadow-green-500/50"
               style={{ backgroundColor: "#f8fafc" }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.backgroundColor = "#7bb3e0")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.backgroundColor = "#f8fafc")
-              }
-              aria-label="Email"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundImage = "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)";
+                e.currentTarget.style.backgroundColor = "transparent";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundImage = "none";
+                e.currentTarget.style.backgroundColor = "#f8fafc";
+              }}
+              aria-label="Send email"
+              role="listitem"
             >
-              <Mail className="h-6 w-6" style={{ color: "#7bb3e0" }} />
+              <Mail className="h-6 w-6" style={{ color: "#22c55e" }} aria-hidden="true" />
             </a>
           </div>
         </div>

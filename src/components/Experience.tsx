@@ -48,10 +48,10 @@ const Experience = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "#22c55e" }}>
               Experience
             </h2>
-            <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
+            <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: "#22c55e" }}></div>
           </div>
           
           <div className="space-y-12">
@@ -62,8 +62,8 @@ const Experience = () => {
               >
                 <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center">
-                      <Briefcase className="h-8 w-8 text-primary-foreground" />
+                    <div className="w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110" style={{ backgroundImage: "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" }}>
+                      <Briefcase className="h-8 w-8 text-white drop-shadow-lg" />
                     </div>
                   </div>
                   
@@ -73,7 +73,7 @@ const Experience = () => {
                         <h3 className="text-2xl font-bold text-foreground mb-2">
                           {exp.title}
                         </h3>
-                        <h4 className="text-xl text-primary font-semibold mb-2">
+                        <h4 className="text-xl font-semibold mb-2" style={{ color: '#22c55e' }}>
                           {exp.company}
                         </h4>
                         <div className="flex items-center text-foreground/80 mb-4">
@@ -87,7 +87,7 @@ const Experience = () => {
                     </div>
 
                     {/* ✅ Updated color applied here */}
-                    <h4 className="text-lg md:text-xl mb-6 font-medium italic" style={{ color: '#7bb3e0' }}>
+                    <h4 className="text-lg md:text-xl mb-6 font-medium italic" style={{ color: '#22c55e' }}>
                       Summary
                       </h4>
 
@@ -101,7 +101,7 @@ const Experience = () => {
                       <ul className="space-y-2">
                         {exp.achievements.map((achievement, achIndex) => (
                           <li key={achIndex} className="flex items-start">
-                            <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <div className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0" style={{ backgroundColor: '#001f3f' }}></div>
                             <span className="text-foreground/80">{achievement}</span>
                           </li>
                         ))}
@@ -114,7 +114,7 @@ const Experience = () => {
                         {exp.technologies.map((tech, techIndex) => (
                           <span 
                             key={techIndex}
-                            className="px-3 py-1 bg-accent text-foreground/80 rounded-full text-sm font-medium"
+                            className="px-3 py-1 text-foreground/80 rounded-full text-sm font-medium"
                           >
                             {tech}
                           </span>

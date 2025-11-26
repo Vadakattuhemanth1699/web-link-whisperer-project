@@ -1,4 +1,5 @@
 import { Code, Database, Cloud, Wrench } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Skills = () => {
   const skillCategories = [
@@ -106,13 +107,13 @@ const Skills = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "#22c55e" }}>
               Technical Skills
             </h2>
-            <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
+            <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: "#22c55e" }}></div>
 
             {/* ✅ Updated paragraph with new color and italic */}
-            <p className="text-lg mt-6 max-w-2xl mx-auto italic" style={{ color: '#7bb3e0' }}>
+            <p className="text-lg mt-6 max-w-2xl mx-auto italic" style={{ color: '#22c55e' }}>
               Proficient in diverse programming languages, frameworks, databases, and cloud technologies, enabling the development of robust, scalable applications optimized for cross-platform performance.
             </p>
           </div>
@@ -123,13 +124,13 @@ const Skills = () => {
               return (
                 <div 
                   key={index}
-                  className="bg-card rounded-2xl p-6 shadow-elegant hover:shadow-glow transition-all duration-300 border border-border/50 group hover:-translate-y-1"
+                  className="bg-card rounded-2xl p-6 shadow-elegant hover:shadow-glow transition-all duration-300 border border-border/50 group hover:-translate-y-1 hover:border-green-200"
                 >
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mr-4">
-                      <IconComponent className="h-6 w-6 text-primary-foreground" />
+                    <div className="w-12 h-12 rounded-xl flex items-center justify-center mr-4 transition-all duration-300 hover:scale-110" style={{ backgroundImage: "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" }}>
+                      <IconComponent className="h-6 w-6 text-white drop-shadow-lg" />
                     </div>
-                    <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+                    <h3 className="text-lg font-bold text-foreground group-hover: transition-colors">
                       {category.title}
                     </h3>
                   </div>
@@ -138,10 +139,10 @@ const Skills = () => {
                     {category.skills.map((skill, skillIndex) => (
                       <div 
                         key={skillIndex}
-                        className="flex items-center justify-between p-2 rounded-lg hover:bg-accent/50 transition-colors"
+                        className="flex items-center justify-between p-2 rounded-lg hover:bg-green-50 transition-colors"
                       >
                         <span className="text-foreground/80 font-medium">{skill}</span>
-                        <div className="w-2 h-2 bg-primary rounded-full"></div>
+                        <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#001f3f' }}></div>
                       </div>
                     ))}
                   </div>
@@ -171,7 +172,8 @@ const Skills = () => {
               ].map((skill, index) => (
                 <span 
                   key={index}
-                  className="px-4 py-2 bg-gradient-primary text-primary-foreground rounded-full font-medium hover:shadow-glow transition-all duration-300 cursor-default"
+                  className="px-4 py-2 rounded-full font-medium transition-all duration-300 cursor-default text-white hover:shadow-lg hover:scale-105"
+                  style={{ backgroundImage: index % 2 === 0 ? "linear-gradient(135deg, #22c55e 0%, #001f3f 100%)" : "linear-gradient(135deg, #001f3f 0%, #22c55e 100%)" }}
                 >
                   {skill}
                 </span>
