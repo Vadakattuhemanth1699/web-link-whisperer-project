@@ -18,27 +18,69 @@ All colors MUST be HSL.
 
 @layer utilities {
   :root {
-    /* hex tokens for JS-friendly usage */
-    --primary-hex: #da6fa3;
-    --secondary-hex: #701842;
-    --primary-hsl: 34 197 94;
-    --secondary-hsl: 0 31 63;
-    /* convenience gradient that blends primary -> secondary */
+    /* Light theme tokens */
+    --primary-hex: #5dbbae;
+    --secondary-hex: #187042;
+    --primary-hsl: 324 65% 64%;
+    --secondary-hsl: 334 64% 26%;
+    --background: #f8fafc;
+    --foreground: #18181b;
+    --card: #fff;
     --gradient-primary: linear-gradient(135deg, var(--primary-hex), var(--secondary-hex));
+    --gradient-subtle: linear-gradient(180deg, #fff, #f8fafc);
+    --shadow-elegant: 0 10px 30px -10px hsl(324 65% 64% / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark theme tokens */
+    --primary-hex: #da6fa3;
+    --secondary-hex: #e0aaff;
+    --primary-hsl: 324 65% 64%;
+    --secondary-hsl: 264 100% 85%;
+    --background: #18181b;
+    --foreground: #f8fafc;
+    --card: #232336;
+    --gradient-primary: linear-gradient(135deg, var(--primary-hex), var(--secondary-hex));
+    --gradient-subtle: linear-gradient(180deg, #232336, #18181b);
+    --shadow-elegant: 0 10px 30px -10px hsl(324 65% 64% / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --radius: 0.5rem;
   }
 
   .text-primary { color: var(--primary-hex) !important; }
   .text-secondary { color: var(--secondary-hex) !important; }
+  .text-foreground { color: var(--foreground) !important; }
 
   .bg-primary { background-color: var(--primary-hex) !important; }
   .bg-secondary { background-color: var(--secondary-hex) !important; }
+  .bg-foreground { background-color: var(--foreground) !important; }
+  .bg-background { background-color: var(--background) !important; }
+  .bg-card { background-color: var(--card) !important; }
 
   .bg-gradient-primary { background-image: var(--gradient-primary) !important; }
-
   .bg-gradient-subtle { background-image: var(--gradient-subtle) !important; }
 
   .border-primary { border-color: var(--primary-hex) !important; }
-  .shadow-glow-primary { box-shadow: 0 8px 24px rgba(34,197,94,0.18), 0 0 40px rgba(0,31,63,0.12); }
+  .shadow-glow-primary { box-shadow: 0 8px 24px rgba(218,111,163,0.18), 0 0 40px rgba(112,24,66,0.12); }
+
+  /* Apple-style scroll/fade/scale animations */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  @keyframes floatIcon {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  .animate-fadeInUp { animation: fadeInUp 0.6s cubic-bezier(0.4,0,0.2,1) both; }
+  .animate-scaleIn { animation: scaleIn 0.5s cubic-bezier(0.4,0,0.2,1) both; }
+  .animate-float { animation: floatIcon 3s ease-in-out infinite; }
 
   /* small helper for conic progress indicators that use the primary color */
   .conic-progress-primary {

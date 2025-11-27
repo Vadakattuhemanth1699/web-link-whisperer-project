@@ -55,31 +55,31 @@ const Hero = () => {
           >
             <a
               href="https://github.com/Vadakattuhemanth1699"
-              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg bg-card group hover:bg-gradient-primary"
+              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg bg-card group hover:bg-gradient-primary animate-float"
               aria-label="Visit GitHub profile"
               role="listitem"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Github className="h-6 w-6 text-primary group-hover:text-white" aria-hidden="true" />
+              <Github className="h-6 w-6 text-primary group-hover:text-white animate-scaleIn" aria-hidden="true" />
             </a>
             <a
               href="https://www.linkedin.com/in/hemanth-kumar-89821a31a/"
-              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg bg-card group hover:bg-gradient-primary"
+              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg bg-card group hover:bg-gradient-primary animate-float"
               aria-label="Visit LinkedIn profile"
               role="listitem"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Linkedin className="h-6 w-6 text-primary group-hover:text-white" aria-hidden="true" />
+              <Linkedin className="h-6 w-6 text-primary group-hover:text-white animate-scaleIn" aria-hidden="true" />
             </a>
             <a
               href="mailto:hemanth.kumar8357@gmail.com"
-              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg bg-card group hover:bg-gradient-primary"
+              className="p-3 rounded-full transition-all duration-300 hover:scale-125 shadow-md hover:shadow-lg bg-card group hover:bg-gradient-primary animate-float"
               aria-label="Send email"
               role="listitem"
             >
-              <Mail className="h-6 w-6 text-primary group-hover:text-white" aria-hidden="true" />
+              <Mail className="h-6 w-6 text-primary group-hover:text-white animate-scaleIn" aria-hidden="true" />
             </a>
           </div>
         </div>
