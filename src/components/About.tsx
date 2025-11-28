@@ -26,7 +26,7 @@ const About = () => {
             </div>
             <div className="flex items-center gap-4 p-4 rounded-xl hover:bg-green-50 transition-colors duration-300">
               <MapPin className="h-6 w-6 flex-shrink-0 text-secondary" />
-              <span className="text-foreground/80">Plano, Texas, USA</span>
+              <span className="text-foreground/80">United States</span>
             </div>
             <div className="flex items-center gap-4 p-4 rounded-xl hover:bg-green-50 transition-colors duration-300">
               <GraduationCap className="h-6 w-6 flex-shrink-0 text-secondary" />
