@@ -77,7 +77,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold">Location</h3>
-                  <p>Plano, Texas, USA</p>
+                  <p>United States</p>
                 </div>
               </div>
 

@@ -19,8 +19,8 @@ All colors MUST be HSL.
 @layer utilities {
   :root {
     /* Light theme tokens */
-    --primary-hex: #5dbbae;
-    --secondary-hex: #187042;
+    --primary-hex: #259483;
+    --secondary-hex: #317097;
     --primary-hsl: 324 65% 64%;
     --secondary-hsl: 334 64% 26%;
     --background: #f8fafc;

@@ -128,7 +128,7 @@ const Skills = () => {
                 >
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 rounded-xl flex items-center justify-center mr-4 transition-all duration-300 hover:scale-110 bg-gradient-primary">
-                      <IconComponent className="h-6 w-6 text-secondary drop-shadow-lg" />
+                      <IconComponent className="h-6 w-6 text-white drop-shadow-lg" />
                     </div>
                     <h3 className="text-lg font-bold text-secondary group-hover: transition-colors">
                       {category.title}
