@@ -158,4 +158,10 @@ All colors MUST be HSL.
   /* subtle transform helpers */
   .hover\:-translate-y-1:hover { transform: translateY(-0.25rem); }
   .hover\:-translate-y-2:hover { transform: translateY(-0.5rem); }
+
+  /* Text justification & hyphenation helpers for balanced paragraphs */
+  .text-justified { text-align: justify; text-justify: inter-word; }
+  .hyphenate { -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
+  /* text-wrap: balance if supported in browsers will try to even out line lengths */
+  .text-balance { text-wrap: balance; }
 }

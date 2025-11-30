@@ -42,15 +42,14 @@ const ActionIcon = () => {
       </div>
 
       {/* Tooltip showing current section */}
-      <div className="absolute -top-12 right-0 bg-gradient-subtle text-white text-xs font-semibold px-3 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+      <div className="absolute -top-12 right-0 bg-gradient-subtle text-black text-xs font-semibold px-3 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
         📍 {currentSection.label}
-  <div className="absolute -bottom-1 right-4 w-2 h-2 bg-gray-900 transform rotate-45"></div>
       </div>
 
       {/* Scroll progress indicator */}
       <div className="absolute inset-0 rounded-full border-2 border-transparent"
         style={{
-          background: `conic-gradient(var(--secondary-hex) ${scrollProgress}%, transparent ${scrollProgress}%)`,
+          background: `conic-gradient(#000 ${scrollProgress}%, transparent ${scrollProgress}%)`,
           opacity: 0.3,
         }}
       ></div>

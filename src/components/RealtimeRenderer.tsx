@@ -179,7 +179,7 @@ const RealtimeRenderer: React.FC<{ className?: string }> = ({ className }) => {
       <canvas ref={canvasRef} className={`realtime-renderer`} />
       {/* Non-intrusive status indicator so it's obvious the background is active */}
       <div className="realtime-indicator" aria-hidden>
-        Realtime • active
+        {/* Realtime • active */}
       </div>
     </div>
   );
