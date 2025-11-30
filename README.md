@@ -1,22 +1,18 @@
-# Welcome to your Lovable project
+# Hemanth's Portfolio — project source
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/131f66b1-4c52-45cc-bca0-bd8ea88bedfd
+**URL**: your published site URL (set this when you deploy)
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/131f66b1-4c52-45cc-bca0-bd8ea88bedfd) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+Editing and deploying this project can be done locally using the commands below. This repository contains the full source code for Hemanth's Portfolio.
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will be reflected in your Git host and your chosen deployment.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -62,12 +58,18 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/131f66b1-4c52-45cc-bca0-bd8ea88bedfd) and click on Share -> Publish.
+To publish this site, you can build a static bundle and deploy to any static host (Vercel, Netlify, GitHub Pages, or your own server). For example:
 
-## Can I connect a custom domain to my Lovable project?
+```sh
+# build production artifacts
+npm run build
 
-Yes, you can!
+# serve the production build locally (optional)
+npx serve dist
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+If you use a hosting provider, follow their instructions to point your domain and publish the contents of the `dist/` directory.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Can I connect a custom domain?
+
+Yes, you can connect a custom domain at your hosting provider or DNS registrar. The exact steps differ by host — see your provider's documentation (e.g., Netlify, Vercel, GitHub Pages) for instructions on adding and configuring a custom domain.
