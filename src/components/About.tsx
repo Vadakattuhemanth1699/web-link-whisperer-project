@@ -1,10 +1,16 @@
 import { Briefcase, MapPin, GraduationCap } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const About = () => {
+  const { ref, isVisible } = useScrollAnimation(0.12);
+
   return (
     <section id="about" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-5xl mx-auto bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-10 md:p-16">
+        <div
+          ref={ref}
+          className={`max-w-5xl mx-auto bg-card rounded-2xl shadow-lg transition-smooth will-change-transform p-10 md:p-16 ${isVisible ? 'animate-scaleIn opacity-100' : 'opacity-0 translate-y-6'}`}
+        >
           <h2 className="text-3xl md:text-5xl font-bold mb-8 tracking-tight text-primary">About Me</h2>
 
           <div className="space-y-6 text-foreground/75 text-base md:text-lg leading-relaxed tracking-wide">
@@ -19,20 +25,37 @@ const About = () => {
             </p>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-            <div className="flex items-center gap-4 p-4 rounded-xl hover:bg-green-50 transition-colors duration-300">
-              <Briefcase className="h-6 w-6 flex-shrink-0 text-secondary"/>
-              <span className="text-foreground/80">5+ Years Experience</span>
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+              <div className="flex items-center gap-4 p-4 rounded-xl transition-smooth will-change-transform hover:-translate-y-2 hover:shadow-glow-primary bg-card">
+                <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-gradient-primary transition-smooth transform-gpu hover:scale-105">
+                  <Briefcase className="h-5 w-5 text-white drop-shadow-md"/>
+                </div>
+                <div>
+                  <div className="text-sm font-semibold text-secondary">5+ Years</div>
+                  <div className="text-xs text-foreground/70">Experience</div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4 p-4 rounded-xl transition-smooth will-change-transform hover:-translate-y-2 hover:shadow-glow-primary bg-card">
+                <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-gradient-primary transition-smooth transform-gpu hover:scale-105">
+                  <MapPin className="h-5 w-5 text-white drop-shadow-md" />
+                </div>
+                <div>
+                  <div className="text-sm font-semibold text-secondary">Plano, Texas</div>
+                  <div className="text-xs text-foreground/70">United States</div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4 p-4 rounded-xl transition-smooth will-change-transform hover:-translate-y-2 hover:shadow-glow-primary bg-card">
+                <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-gradient-primary transition-smooth transform-gpu hover:scale-105">
+                  <GraduationCap className="h-5 w-5 text-white drop-shadow-md" />
+                </div>
+                <div>
+                  <div className="text-sm font-semibold text-secondary">Master's</div>
+                  <div className="text-xs text-foreground/70">Info Systems & Technology</div>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center gap-4 p-4 rounded-xl hover:bg-green-50 transition-colors duration-300">
-              <MapPin className="h-6 w-6 flex-shrink-0 text-secondary" />
-              <span className="text-foreground/80">United States</span>
-            </div>
-            <div className="flex items-center gap-4 p-4 rounded-xl hover:bg-green-50 transition-colors duration-300">
-              <GraduationCap className="h-6 w-6 flex-shrink-0 text-secondary" />
-              <span className="text-foreground/80">Master's in Information Systems & Technology</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
