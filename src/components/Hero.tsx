@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, Download } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-subtle relative overflow-hidden" aria-label="Hero section">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-subtle relative overflow-hidden pt-32 sm:pt-20 md:pt-0" aria-label="Hero section">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5" aria-hidden="true"></div>
       {/* realtime rendering background layer (particles / lighting) */}
