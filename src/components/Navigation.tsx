@@ -34,11 +34,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-background/80 backdrop-blur-md shadow-elegant' 
-        : 'bg-transparent'
-    }`} aria-label="Main navigation">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background shadow-elegant`} aria-label="Main navigation">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
