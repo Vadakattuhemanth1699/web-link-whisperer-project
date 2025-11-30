@@ -87,6 +87,62 @@ All colors MUST be HSL.
     background: conic-gradient(var(--primary-hex) 0%, transparent 0%);
   }
 
+  /* Realtime renderer helper */
+  .realtime-renderer {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    will-change: transform, opacity;
+    /* use screen blend so light blobs show through darker and lighter surfaces */
+    mix-blend-mode: screen;
+    opacity: 1;
+    transition: opacity 420ms var(--transition-smooth), filter 420ms var(--transition-smooth), transform 420ms var(--transition-smooth);
+    /* subtle blur for a soft depth look on larger screens */
+    filter: blur(12px) saturate(1.2) contrast(1.02);
+    transform: translateZ(0);
+  }
+
+  .realtime-renderer-wrapper {
+    position: absolute;
+    inset: 0;
+    display: block;
+    pointer-events: none;
+  }
+
+  .realtime-indicator {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 5;
+    font-size: 11px;
+    padding: 6px 8px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(6px) saturate(1.2);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: opacity 200ms ease, transform 200ms ease;
+  }
+
+  .dark .realtime-indicator { color: rgba(255,255,255,0.9); background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); }
+
+  /* reduce intensity / disable blur on small screens for performance */
+  @media (max-width: 640px) {
+    .realtime-renderer { filter: none; opacity: 0.7; }
+  }
+
+  /* Global transition utilities */
+  .transition-smooth { transition: var(--transition-smooth); }
+  .transition-fast { transition: all 140ms ease-out; }
+  .transition-slow { transition: all 420ms cubic-bezier(0.2,0.8,0.2,1); }
+  .will-change-transform { will-change: transform; }
+
+  /* subtle lift hover for hero / cards */
+  .lift-on-hover { transform: translateY(0); transition: transform 300ms cubic-bezier(0.2,0.8,0.2,1), box-shadow 300ms; }
+  .lift-on-hover:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }
+
   /* Transition / motion utilities - apple-like smooth feeling */
   .transition-smooth { transition: var(--transition-smooth) !important; }
   .transition-fast { transition: all 140ms cubic-bezier(0.2,0.8,0.2,1) !important; }

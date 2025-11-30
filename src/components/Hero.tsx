@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import RealtimeRenderer from "./RealtimeRenderer";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 
 const Hero = () => {
@@ -6,6 +7,10 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-subtle relative overflow-hidden" aria-label="Hero section">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5" aria-hidden="true"></div>
+      {/* realtime rendering background layer (particles / lighting) */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <RealtimeRenderer />
+      </div>
       <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-primary rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" aria-hidden="true"></div>
       <div
         className="absolute bottom-20 right-10 w-72 h-72 bg-accent rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"

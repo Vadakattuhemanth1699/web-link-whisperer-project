@@ -52,7 +52,7 @@ const About = () => {
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-secondary">Master's</div>
-                  <div className="text-xs text-foreground/70">Info Systems & Technology</div>
+                  <div className="text-xs text-foreground/70">Information Systems & Technology</div>
                 </div>
               </div>
             </div>
