@@ -29,9 +29,9 @@ const Experience = () => {
       ]
     },
     {
-      title: "DotNet Developer",
+      title: "Software Engineering Intern (.NET)",
       company: "Luxoft",
-      location: "Bangalore, INDIA",
+      location: "Remote",
       period: "March 2018 - May 2020",
       description: "Developed comprehensive web applications for enterprise clients at Luxoft through strategic collaboration with stakeholders and business analysts. Architected scalable applications using C#, .NET Framework, and React while leveraging AWS cloud services including EC2, S3, RDS, and Lambda functions for optimal performance and reliability. Key technical contributions included designing robust RESTful APIs with .NET Core, implementing complex SQL optimization strategies, and developing seamless integration patterns using WCF and SOAP protocols. Demonstrated technical leadership by managing sprint progress, resolving cross-functional bottlenecks, and ensuring all deliverables met stringent business requirements. Successfully integrated legacy VB.NET systems with modern React frontends, utilized Kendo UI for enhanced user experiences, and implemented serverless computing solutions that reduced operational overhead while maintaining enterprise-level security and performance standards",
       technologies: ["C#", ".React",".Net framework", "AWS", "SQL", " ASP.NET MVC", "Restful APIs", "AWS"],
