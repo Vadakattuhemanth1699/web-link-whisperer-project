@@ -7,14 +7,13 @@ const Education = () => {
       school: "University of North Texas",
       period: "2022 - 2023",
       description: "Master's in Information Systems and Technology",
-      gpa: "3.6"
+      gpa: "3.6 GPA"
     },
     {
       degree: "Bachelor's",
       school: "KL University",
-      period: "2017 - 2021",
       description: "Bachelor's in Computer Science and Engineering",
-      gpa: "3.0"
+      gpa: "3.0 GPA"
     }
   ];
 
