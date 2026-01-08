@@ -41,7 +41,7 @@ const About = () => {
                   <MapPin className="h-5 w-5 text-white drop-shadow-md" />
                 </div>
                 <div>
-                  {/* <div className="text-sm font-semibold text-secondary">Plano, Texas</div> */}
+                  <div className="text-sm font-semibold text-secondary">Location</div>
                   <div className="text-xs text-foreground/70">United States</div>
                 </div>
               </div>
