@@ -53,7 +53,7 @@ const Education = () => {
                       </div>
                       <div className="flex flex-col items-start md:items-end mt-4 md:mt-0">
                         <div className="flex items-center mb-2 text-primary">
-                          <Calendar className="h-4 w-4 mr-2" />
+                          {/* <Calendar className="h-4 w-4 mr-2" /> */}
                           <span className="text-sm">{education.period}</span>
                         </div>
                         {education.gpa && (
