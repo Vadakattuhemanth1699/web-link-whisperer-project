@@ -29,7 +29,7 @@ const Experience = () => {
       ]
     },
     {
-      title: "Software Engineering Intern (.NET)",
+      title: "Software Engineering (.NET)",
       company: "Luxoft",
       location: "Remote",
       period: "March 2018 - May 2020",
