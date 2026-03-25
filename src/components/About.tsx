@@ -15,7 +15,7 @@ const About = () => {
 
           <div className="space-y-6 text-foreground/75 text-base md:text-lg leading-relaxed tracking-wide">
             <p>
-              I'm a passionate Full Stack .NET Developer with over 5 years of experience building high-impact applications for enterprise environments. From modernizing legacy systems to creating scalable cloud-native solutions, I specialize in delivering robust software that actually works—and lasts.
+              I'm a passionate Full Stack .NET Developer with over 5 years of experience building high-impact applications for enterprise environments. From modernizing legacy systems to creating scalable cloud-native solutions, I specialize in delivering robust software that actually works and lasts.
             </p>
             <p>
               At Quadax, I led the migration of monolithic apps to Angular + .NET Core microservices, improving performance by 45% and reducing technical debt significantly. My work supports 50,000+ users with 99.9% uptime.

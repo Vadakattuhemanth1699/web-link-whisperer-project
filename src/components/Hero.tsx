@@ -62,9 +62,12 @@ const Hero = () => {
               <h2 className="text-2xl md:text-3xl mb-8 font-medium italic tracking-tight text-secondary">
                 Full Stack DotNet Developer
               </h2>
-              <p lang="en" className="text-lg md:text-xl text-foreground/70 mb-8 max-w-3xl mx-auto leading-relaxed tracking-wide text-justified hyphenate text-balance">
-                I’m a Full Stack .NET Developer with experience in healthcare and banking applications. I build reliable, user-friendly software using C#, ASP.NET Core, Angular, SQL Server, and Azure. I’ve also led migration projects to modernize legacy systems into scalable, cloud-ready solutions. I focus on performance, security, clean code, and delivering solutions that make a real difference.
-              </p>
+              <p
+  lang="en"
+  className="text-lg md:text-xl text-foreground/80 mb-6 max-w-2xl leading-relaxed text-left"
+>
+  I’m a Full Stack .NET Developer with experience in healthcare and banking applications. I build reliable, user-friendly software using C#, ASP.NET Core, Angular, SQL Server, and Azure. I’ve also led migration projects to modernize legacy systems into scalable, cloud-ready solutions. I focus on performance, security, clean code, and delivering solutions that make a real difference.
+</p>
 
               {/* Social icons (right-side) */}
               <div className="flex justify-center lg:justify-start space-x-8 animate-fade-in mt-4" style={{ animationDelay: "0.4s" }} role="list">
